@@ -2,7 +2,6 @@ let nota1 = Number(prompt("Insira a primeira nota:"));
 let nota2 = Number(prompt("Insira a segunda nota:"));
 let nota3 = Number(prompt("Insira a terceira nota:"));
 let nota4 = Number(prompt("Insira a quarta nota:"));
-let aprovacao = "";
 // LEMBRE DE CONVERTER OS TIPOS DE DADOS
 // Tipagem dinâmica dos infernos
 
@@ -20,13 +19,13 @@ try {
 
         switch (media) {
             case media < 5:
-                aprovacao = "foi reprovado";
+                return "foi reprovado";
             
             case media > 6:
-                aprovacao = "foi aprovado";
+                return "foi aprovado";
     
             case media >= 5 && media <= 6:
-                aprovacao = "está em recuperação"
+                return "está em recuperação"
         }
 
         alert(`O aluno ${aprovacao}.`);
